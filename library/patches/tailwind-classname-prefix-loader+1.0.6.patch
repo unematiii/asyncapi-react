@@ -1,0 +1,12 @@
+diff --git a/node_modules/tailwind-classname-prefix-loader/lib/tailwindClasses.js b/node_modules/tailwind-classname-prefix-loader/lib/tailwindClasses.js
+index 0393199..61981c4 100644
+--- a/node_modules/tailwind-classname-prefix-loader/lib/tailwindClasses.js
++++ b/node_modules/tailwind-classname-prefix-loader/lib/tailwindClasses.js
+@@ -1995,6 +1995,7 @@ const tailwindClasses = [
+     'min-h-screen',
+     'min-w-0',
+     'min-w-full',
++    'min-w-1/4',
+     'ml-0',
+     'ml-05',
+     'ml-1',

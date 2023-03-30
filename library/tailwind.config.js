@@ -1,6 +1,8 @@
 module.exports = {
   // Purge works on production env
-  purge: ['./src/**/*.tsx'],
+  //purge: ['./src/**/*.tsx'],
+  purge: ['././browser/standalone/*.js'],
+  prefix: 'tw-',
   darkMode: false, // or 'media' or 'class'
   theme: {
     // use default styles of tailwind v1: https://tailwindcss.com/docs/upgrading-to-v2#configure-your-color-palette-explicitly

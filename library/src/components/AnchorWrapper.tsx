@@ -19,7 +19,7 @@ export const AnchorWrapper: React.FunctionComponent<Props> = ({
     >
       <HiLink
         {...iconProps}
-        className={`absolute inline-block w-5 h-5 ${iconProps?.className ||
+        className={`absolute tw-absolute inline-block w-5 h-5 ${iconProps?.className ||
           ''}`}
       />
     </a>

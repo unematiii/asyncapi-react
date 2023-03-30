@@ -75,12 +75,23 @@ const standaloneBundle = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
         exclude: /node_modules/,
-        options: {
-          configFile: 'tsconfig.esm.json',
-          transpileOnly: true,
-        },
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              configFile: 'tsconfig.esm.json',
+              transpileOnly: true,
+            },
+          },
+          {
+            loader: 'tailwind-classname-prefix-loader',
+            options: {
+              prefix: 'tw-',
+              attrs: [],
+            },
+          },
+        ],
       },
     ],
   },
